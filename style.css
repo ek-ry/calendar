@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#calendar {
+    max-width: 300px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+#timeSelectionContainer {
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.time-btn {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.time-btn:hover {
+    background-color: #0056b3;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#receipt {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}

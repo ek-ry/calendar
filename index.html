@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FullCalendar CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div id="homePage">
+        <h1>Welcome to Our Appointment Scheduler</h1>
+        <button id="bookBtn">Book Appointment</button>
+    </div>
+
+    <!-- Booking Page -->
+    <div id="bookingPage" style="display: none;">
+        <h2>Book Your Appointment</h2>
+
+        <div class="booking-container">
+            <!-- Full Calendar for Date Selection -->
+            <div id='calendar'></div>
+
+            <!-- Time Selection -->
+            <div id="timeSelectionContainer" style="display: none;">
+                <h3>Select a Time:</h3>
+                <div id="timeButtons">
+                    <button class="time-btn" data-time="09:00 AM">09:00 AM</button>
+                    <button class="time-btn" data-time="10:00 AM">10:00 AM</button>
+                    <button class="time-btn" data-time="11:00 AM">11:00 AM</button>
+                    <button class="time-btn" data-time="01:00 PM">01:00 PM</button>
+                    <button class="time-btn" data-time="02:00 PM">02:00 PM</button>
+                    <button class="time-btn" data-time="03:00 PM">03:00 PM</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Name Input -->
+        <div>
+            <label for="userNameInput">Your Name:</label>
+            <input type="text" id="userNameInput" placeholder="Enter your name">
+        </div>
+
+        <!-- Service Type and Cost Display -->
+        <div>
+            <p><strong>Service Type:</strong> Therapy Session</p>
+            <p><strong>Cost:</strong> $100</p>
+        </div>
+
+        <!-- Submit Button -->
+        <button id="submitBooking" style="display: none;">Submit Booking</button>
+    </div>
+
+    <!-- Confirmation Page -->
+    <div id="confirmationPage" style="display: none;">
+        <h2>Your Booking is Confirmed!</h2>
+        <div id="receipt">
+            <p><strong>Name:</strong> <span id="userNameReceipt"></span></p>
+            <p><strong>Date:</strong> <span id="appointmentDateReceipt"></span></p>
+            <p><strong>Time:</strong> <span id="appointmentTimeReceipt"></span></p>
+            <p><strong>Service:</strong> Therapy Session</p>
+            <p><strong>Cost:</strong> $100</p>
+        </div>
+    </div>
+
+    <!-- FullCalendar JS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
